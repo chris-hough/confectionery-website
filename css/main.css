@@ -5,7 +5,7 @@ h2 {
 }
 
 body {
-  font-family: "lato", sans-serif;
+  font-family: lato, sans-serif;
   background-image: url("../images/candy-icon.svg");
   background-repeat: repeat;
   background-size: 55px;
@@ -36,8 +36,6 @@ a {
   font-family: "Love Ya Like A Sister", cursive;
 }
 
-
-
 header,
 footer {
   background-color: #6c2937;
@@ -56,7 +54,7 @@ nav {
 
 a:hover {
   background-color: #c26e6b;
-  border-radius: 4pt;
+  border-radius: 4px;
 }
 
 .btn {
@@ -79,7 +77,6 @@ a:hover {
   footer {
     text-align: left;
   }
-
 
   nav {
     text-align: right;
