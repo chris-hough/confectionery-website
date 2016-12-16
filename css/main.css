@@ -29,6 +29,12 @@ a {
   border-color: #c26e6b;
 }
 
+#email,
+#subject,
+#details {
+  color: #c26e6b;
+}
+
 .banner {
   background-image: url("../images/banner.jpg");
   background-size: cover;
