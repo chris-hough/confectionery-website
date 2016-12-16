@@ -1,12 +1,14 @@
 h1,
 h2 {
   font-family: "Love Ya Like A Sister", cursive;
-  color: #b1555c;
+  color: #c26e6b;
 }
 
 body {
   font-family: "lato", sans-serif;
-
+  background-image: url("../images/candy-icon.svg");
+  background-repeat: repeat;
+  background-size: 55px;
 }
 
 main {
@@ -14,7 +16,7 @@ main {
 }
 
 html {
-  background-color: #b1555c;
+  background-color: #c26e6b;
 }
 
 a {
@@ -39,6 +41,49 @@ a {
 header,
 footer {
   background-color: #6c2937;
+  text-align: center;
+  display: block;
 }
 
-@media only screen and (min-width: 38em) {
+footer {
+  color: #fff;
+}
+
+nav {
+  display: block;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #c26e6b;
+  border-radius: 4pt;
+}
+
+.btn {
+  background-color: #c26e6b;
+  border-color: #c26e6b;
+}
+
+.btn:hover {
+  background-color: #6c2937;
+  border-color: #6c2937;
+}
+
+@media only screen and (min-width: 25em) {
+
+  header {
+    text-align: left;
+    display: inline-block;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+
+  nav {
+    text-align: right;
+    display: inline-block;
+  }
+
+}

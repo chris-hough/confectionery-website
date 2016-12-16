@@ -11,73 +11,109 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Love+Ya+Like+A+Sister" rel="stylesheet">
 </head>
 <body>
-  <header class="grid grid-middle">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+  <header class="grid grid-middle pad-bottom-half">
     <h1 class="exa unit xs-1 s-1-3 m-1-3 l-1-3 gutter-half push-0 left">Coco's Chocolatiers</h1>
-    <nav class="unit xs-1 s-2-3 m-2-3 l-2-3">
-      <ul class="list-group-inline right push-0">
+    <nav class="unit xs-1 s-2-3 m-2-3 l-2-3 gutter-half" role="navigation">
+      <ul class="list-group-inline push-0">
         <li>
-          <a class="gutter-quarter" href="#">About</a>
+          <a class="gutter-quarter" href="#about">About</a>
         </li>
         <li>
-          <a class="gutter-quarter" href="#">Specials</a>
+          <a class="gutter-quarter" href="#specials">Specials</a>
         </li>
         <li>
-          <a class="gutter-quarter" href="#">Contact Us</a>
+          <a class="gutter-quarter" href="#contact">Contact Us</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="wrapper">
+  <main class="wrapper" role="main">
     <div class="banner">
       <div class="banner-content pad-t-2">
         <h3 class="tera bold text-center">The city's favourite sweet spot since 2002</h3>
       </div>
     </div>
-    <div id="about" class="">
-      <h2 class="tera">About Us</h2>
-      <p></p>
-      <div class="grid grid-middle">
-          <img class="unit xs-1 s-1 m-1-3 l-1-3 img-flex push" src="images/portrait2.png" alt="">
-          <p class="unit xs-1 s-1 m-2-3 l-2-3 gutter">We are proud to bring you a wide assortment of the finest chocolates and other sweet treats from around the world. Specializing in Belgian imports, we have what you need for any occassion. Our staff is always happy to help.</p>
-      </div>
-    </div>
-    <div id="specials">
-      <h2 class="tera">Specials</h2>
-      <div class="grid push">
-        <p class="unit xs-1 s-1 m-1 l-1">We are always getting new stock in store. Every season brings special new treats for you to try! Check in store to take advantage of our weekly deals.</p>
-        <div class="unit xs-1 s-1 m-1-3 l-1-3">
-          <img class="img-flex" src="images/chocolates.jpg">
-        </div>
-        <div class="unit xs-1 s-1 m-1-3 l-1-3">
-          <img class="img-flex" src="images/special1.jpg">
-        </div>
-        <div class="unit xs-1 s-1 m-1-3 l-1-3">
-          <img class="img-flex" src="images/popcorn.jpg">
+    <div class="gutter-half">
+      <div id="about" class="">
+        <h2 class="tera">About Us</h2>
+        <p></p>
+        <div class="grid grid-middle">
+            <img class="unit xs-1 s-1 m-1-3 l-1-3 img-flex push" src="images/portrait2.png" alt="">
+            <p class="unit xs-1 s-1 m-2-3 l-2-3 gutter">We are proud to bring you a wide assortment of the finest chocolates and other sweet treats from around the world. Specializing in Belgian imports, we have what you need for any occassion. Our staff is always happy to help.</p>
         </div>
       </div>
-      <div>
-        <h3 class="giga">Festive Gift Baskets</h3>
-        <p class="">Our best selling baskets are back! Place your order now to receive your basket in time for Christmas. Supplies are limited, and based on a first come, first serve basis.</p>
+      <div id="specials">
+        <h2 class="tera">Specials</h2>
+        <div class="grid push">
+          <p class="unit xs-1 s-1 m-1 l-1">We are always getting new stock in store. Every season brings special new treats for you to try! Check in store to take advantage of our weekly deals.</p>
+          <div class="unit xs-1 s-1 m-1-3 l-1-3">
+            <img class="img-flex" src="images/chocolates.jpg" alt="chocolates">
+          </div>
+          <div class="unit xs-1 s-1 m-1-3 l-1-3">
+            <img class="img-flex" src="images/special1.jpg" alt="christmas cookies">
+          </div>
+          <div class="unit xs-1 s-1 m-1-3 l-1-3">
+            <img class="img-flex" src="images/popcorn.jpg" alt="chocolate popcorn">
+          </div>
+        </div>
+        <div>
+          <h3 class="giga">Festive Gift Baskets</h3>
+          <p class="push-0">Our best selling baskets are back! Place your order now to receive your basket in time for Christmas. Supplies are limited, and based on a first come, first serve basis.</p>
+        </div>
+        <section class="contact pad-t-2 pad-b-2">
+          <div class="max-length block">
+            <h4 class="mega">Reserve your basket</h3>
+            <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
+              <div class="push">
+                <label for="name">Name</label>
+                <input id="name">
+              </div>
+              <div class="push">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="me@me.com">
+              </div>
+              <div class="push">
+                <label for="subject">Basket type</label>
+                <select id="subject">
+                  <option>Chocoholic's Delight</option>
+                  <option>Candy Cane</option>
+                  <option>White (Chocolate) Christmas</option>
+                </select>
+              </div>
+              <div class="push">
+                <label for="details">Special Instructions</label>
+                <textarea id="details"></textarea>
+              </div>
+              <div>
+                <button class="btn btn-light" type="submit">Send request!</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
-    </div>
-    <div class="" id="contact">
-      <h2 class="tera">Contact Us</h2>
-      <img>
-      <h3>Hours:</h3>
-      <dl class="milli">
-        <dt class="bold">Monday to Friday:</dt>
-        <dd class="push-quarter">9am - 6pm</dd>
-        <dt class="bold">Saturday:</dt>
-        <dd class="push-quarter">10am - 5pm</dd>
-        <dt class="bold">Sunday:</dt>
-        <dd class="push-quarter">12am - 5pm</dd>
-      </dl>
-      <h3>Email:</h3>
-      <span>coco_chocolate@email.com</span>
+      <div class="pad-b" id="contact">
+        <h2 class="tera push-0">Contact Us</h2>
+        <img>
+        <h3 class="mega push-half">Hours:</h3>
+        <dl class="milli">
+          <dt class="bold">Monday to Friday:</dt>
+          <dd class="push-quarter">9am - 6pm</dd>
+          <dt class="bold">Saturday:</dt>
+          <dd class="push-quarter">10am - 5pm</dd>
+          <dt class="bold">Sunday:</dt>
+          <dd class="push-quarter">12am - 5pm</dd>
+        </dl>
+        <h3 class="mega push-half">Email:</h3>
+        <span>coco_chocolate@email.com</span>
+      </div>
     </div>
   </main>
-  <footer>
-    <small>Coco's Chocolatier's</small>
+  <footer class="island-half" role="contentinfo">
+    <small class="micro">© Coco's Chocolatier's 2016</small>
   </footer>
 </body>
 </html>
