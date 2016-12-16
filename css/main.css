@@ -29,6 +29,7 @@ a {
   border-color: #c26e6b;
 }
 
+#name,
 #email,
 #subject,
 #details {
