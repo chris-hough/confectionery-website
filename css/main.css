@@ -1,7 +1,7 @@
 h1,
 h2 {
   font-family: "Love Ya Like A Sister", cursive;
-  color: #00B7C4;
+  color: #b1555c;
 }
 
 body {
@@ -14,7 +14,7 @@ main {
 }
 
 html {
-  background-color: #9EEDE9;
+  background-color: #b1555c;
 }
 
 a {
@@ -35,68 +35,10 @@ a {
 }
 
 
-.nav {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 2rem;
-  z-index: 100;
-}
-
-.nav-check:checked ~ .nav {
-  display: block;
-}
-
-.nav-check {
-  position: absolute;
-  top: -3em;
-}
-
-.nav-check:checked ~ .nav-label {
-  background-color:;
-}
-
-.nav-label {
-  float: right;
-  display: inline-block;
-  width: 2rem;
-}
-
-li {
-  color: #fff;
-  text-decoration: none;
-  list-style-type: none;
-}
 
 header,
 footer {
-  background-color: #FFE0B8;
+  background-color: #6c2937;
 }
 
 @media only screen and (min-width: 38em) {
-
-  .nav-label {
-    display: none;
-  }
-
-  .nav-check {
-    display: none;
-  }
-
-  .nav {
-    display: inline-block;
-    float: right;
-    position: static;
-    max-width: 50%;
-    padding: 0;
-  }
-
-    header > h1 {
-    float: left;
-    max-width: 50%;
-  }
-
-  nav li {
-    display: inline-block;
-  }
-}
