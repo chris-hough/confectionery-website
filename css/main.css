@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+.contact {
+  border-style: dashed;
+  border-color: #c26e6b;
+}
+
 .banner {
   background-image: url("../images/banner.jpg");
   background-size: cover;
